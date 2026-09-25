@@ -4,7 +4,7 @@
 (defn itemify [{:ogTitle title
                 :ogArticleTag oneTagWhat
                 :ogArticlePublishedTime pubDate}]
-  (def link (string/format "https://dasein-online.ca/articles/%s/index.html" (string/replace-all title " " "-")))
+  (def link (string/format "https://dasein-online.ca/articles/%s/index.html" (string/replace-all " " "-" title)))
   [:item
      [:title title]
      [:link link]
