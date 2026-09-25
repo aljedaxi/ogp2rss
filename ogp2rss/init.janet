@@ -2,8 +2,8 @@
 (use spork/htmlgen)
 
 (defn itemify [{:ogTitle title
-                :ogArticleTag oneTagWhat
-                :ogArticlePublishedTime pubDate}]
+                :articleTag oneTagWhat
+                :articlePublishedTime pubDate}]
   (def link (string/format "https://dasein-online.ca/articles/%s/index.html" (string/replace-all " " "-" title)))
   [:item
      [:title title]
